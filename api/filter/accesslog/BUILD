@@ -1,5 +1,7 @@
 load("//bazel:api_build_system.bzl", "api_proto_library")
 
+exports_files(glob(["*.proto"]))
+
 api_proto_library(
     name = "accesslog",
     srcs = ["accesslog.proto"],
